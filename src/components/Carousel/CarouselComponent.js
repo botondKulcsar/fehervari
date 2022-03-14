@@ -7,7 +7,14 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 const CarouselComponent = () => {
   return (
-    <Carousel interval={4000} showArrows={true} autoPlay showStatus={false} showThumbs={false} >
+    <Carousel
+      infiniteLoop
+      interval={4000}
+      showArrows={true}
+      autoPlay
+      showStatus={false}
+      showThumbs={false}
+    >
       <div>
         <img src={img1} alt='img1' />
       </div>
