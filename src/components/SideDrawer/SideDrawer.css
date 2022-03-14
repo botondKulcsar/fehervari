@@ -1,0 +1,78 @@
+.side-drawer {
+  height: 100%;
+  background-color: white;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  max-width: 400px;
+  z-index: 200;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
+}
+
+.side-drawer.open {
+  transform: translateX(0);
+}
+
+.side-drawer__items {
+  margin-top: 4rem;
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.side-drawer li {
+  margin: 0.5rem 0;
+}
+
+.sidebar__navigation-link {
+  color: var(--main-red);
+  text-decoration: none;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+}
+
+.sidebar__navigation-submenu-items {
+  background: white;
+  margin: -1rem 0;
+  list-style: none;
+  padding: 1rem 0.5rem;
+  max-height: 0px;
+  overflow: hidden;
+  transform-origin: top;
+  flex-direction: column;
+  gap: 0.8rem;
+  display: flex;
+  justify-content: center;
+  transition: all .2s ease-out;
+}
+
+
+
+.sidebar__navigation-submenu-items .sidebar__navigation-link {
+  display: none;
+}
+
+input:checked + .sidebar__navigation-submenu-items {
+  max-height: max-content;
+  margin-top: 0rem;
+  margin-bottom: -1rem;
+  transition: all .3s ease-in;
+}
+
+input:checked + .sidebar__navigation-submenu-items .sidebar__navigation-link {
+  display: inline;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+
