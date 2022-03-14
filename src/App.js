@@ -7,6 +7,7 @@ import Backdrop from './components/Backdrop/Backdrop'
 import Home from './screens/home/Home'
 import { Routes, Route } from 'react-router-dom'
 import Cardiology from './screens/Cardiology/Cardiology'
+import Footer from './components/Footer/Footer'
 
 function App () {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false)
@@ -31,6 +32,7 @@ function App () {
           <Route path='*' element={<Home />} />
         </Routes>
       </main>
+      <Footer />
     </div>
   )
 }

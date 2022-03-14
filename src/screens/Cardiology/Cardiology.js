@@ -2,6 +2,9 @@ import React from 'react'
 import './Cardiology.css'
 
 const Cardiology = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className='wrapper'>
       <h2 className='title'>Kardiológia</h2>

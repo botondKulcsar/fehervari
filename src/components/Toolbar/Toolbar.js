@@ -41,15 +41,15 @@ const Toolbar = ({ drawerClickHandler }) => {
                 </li>
                 <li>
                   <Link className='toolbar__navigation-link' to='/'>
-                    Pszihológia
-                  </Link>
-                </li>
-                <li>
-                  <Link className='toolbar__navigation-link' to='/'>
                     Belgyógyászat
                   </Link>
                 </li>
               </ul>
+            </li>
+            <li>
+              <Link className='toolbar__navigation-link' to='/'>
+                Pszihológia
+              </Link>
             </li>
             <li className='toolbar__navigation-submenu-parent'>
               <Link className='toolbar__navigation-link' to='/'>
@@ -65,11 +65,6 @@ const Toolbar = ({ drawerClickHandler }) => {
                 <li>
                   <Link className='toolbar__navigation-link' to='/'>
                     Dr. Frink-Dienes Eszter
-                  </Link>
-                </li>
-                <li>
-                  <Link className='toolbar__navigation-link' to='/'>
-                    Dr. Filip Laura
                   </Link>
                 </li>
                 <li>

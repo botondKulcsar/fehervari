@@ -37,17 +37,18 @@ const SideDrawer = ({ show, hide }) => {
                 Pszihiátria
               </Link>
             </li>
-            <li>
-              <Link className='sidebar__navigation-link' to='/' onClick={hide}>
-                Pszihológia
-              </Link>
-            </li>
+
             <li>
               <Link className='sidebar__navigation-link' to='/' onClick={hide}>
                 Belgyógyászat
               </Link>
             </li>
           </ul>
+        </li>
+        <li>
+          <Link className='sidebar__navigation-link' to='/' onClick={hide}>
+            Pszihológia
+          </Link>
         </li>
         <li className='sidebar__navigation-submenu-parent'>
           <label htmlFor='submenu1' className='sidebar__navigation-link'>
@@ -63,11 +64,6 @@ const SideDrawer = ({ show, hide }) => {
             <li>
               <Link className='sidebar__navigation-link' to='/' onClick={hide}>
                 Dr. Frink-Dienes Eszter
-              </Link>
-            </li>
-            <li>
-              <Link className='sidebar__navigation-link' to='/' onClick={hide}>
-                Dr. Filip Laura
               </Link>
             </li>
             <li>

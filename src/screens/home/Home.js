@@ -3,6 +3,9 @@ import CardContainer from '../../components/CardContainer/CardContainer'
 import CarouselComponent from '../../components/Carousel/CarouselComponent'
 
 const Home = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <CarouselComponent />

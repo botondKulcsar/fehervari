@@ -37,6 +37,7 @@
   text-transform: uppercase;
   cursor: pointer;
   user-select: none;
+  font-weight: 500;
 }
 
 .sidebar__navigation-submenu-items {
@@ -51,10 +52,8 @@
   gap: 0.8rem;
   display: flex;
   justify-content: center;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
 }
-
-
 
 .sidebar__navigation-submenu-items .sidebar__navigation-link {
   display: none;
@@ -64,7 +63,7 @@ input:checked + .sidebar__navigation-submenu-items {
   max-height: max-content;
   margin-top: 0rem;
   margin-bottom: -1rem;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 input:checked + .sidebar__navigation-submenu-items .sidebar__navigation-link {
@@ -74,5 +73,3 @@ input:checked + .sidebar__navigation-submenu-items .sidebar__navigation-link {
 input[type="checkbox"] {
   display: none;
 }
-
-
