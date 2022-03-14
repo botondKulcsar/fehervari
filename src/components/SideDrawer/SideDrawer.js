@@ -63,6 +63,11 @@ const SideDrawer = ({ show, hide }) => {
             </li>
             <li>
               <Link className='sidebar__navigation-link' to='/' onClick={hide}>
+                Dr. Fehérvári Lázár Mónika
+              </Link>
+            </li>
+            <li>
+              <Link className='sidebar__navigation-link' to='/' onClick={hide}>
                 Dr. Frink-Dienes Eszter
               </Link>
             </li>

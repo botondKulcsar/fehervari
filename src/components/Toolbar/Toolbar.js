@@ -64,6 +64,11 @@ const Toolbar = ({ drawerClickHandler }) => {
                 </li>
                 <li>
                   <Link className='toolbar__navigation-link' to='/'>
+                    Dr. Fehérvári Lázár Mónika
+                  </Link>
+                </li>
+                <li>
+                  <Link className='toolbar__navigation-link' to='/'>
                     Dr. Frink-Dienes Eszter
                   </Link>
                 </li>
