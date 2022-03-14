@@ -35,7 +35,7 @@ const Toolbar = ({ drawerClickHandler }) => {
                   </Link>
                 </li>
                 <li>
-                  <Link className='toolbar__navigation-link' to='/'>
+                  <Link className='toolbar__navigation-link' to='/psychiatry'>
                     Pszihiátria
                   </Link>
                 </li>

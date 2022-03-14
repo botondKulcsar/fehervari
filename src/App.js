@@ -7,6 +7,7 @@ import Backdrop from './components/Backdrop/Backdrop'
 import Home from './screens/home/Home'
 import { Routes, Route } from 'react-router-dom'
 import Cardiology from './screens/Cardiology/Cardiology'
+import Psychiatry from './screens/Psychiatry/Psychiatry'
 import Footer from './components/Footer/Footer'
 
 function App () {
@@ -29,6 +30,7 @@ function App () {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/cardiology' element={<Cardiology />} />
+          <Route path='/psychiatry' element={<Psychiatry />} />
           <Route path='*' element={<Home />} />
         </Routes>
       </main>

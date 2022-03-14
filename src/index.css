@@ -1,16 +1,16 @@
 @font-face {
-  font-family: "Rawengulk Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Rawengulk Regular"),
-    url("fonts/RawengulkRegular.woff") format("woff");
-}
-
-@font-face {
   font-family: "Rawengulk Bold";
   font-style: normal;
   font-weight: normal;
   src: local("Rawengulk Bold"), url("fonts/RawengulkBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Rawengulk Demibold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Rawengulk Demibold"),
+    url("fonts/RawengulkDemibold.woff") format("woff");
 }
 
 :root {
@@ -18,6 +18,10 @@
   --light-red: hsl(3, 77%, 58%);
   --main-green: green;
   --grey-background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  --light-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --dark-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3),
+    0 6px 20px 0 rgba(0, 0, 0, 0.285);
 }
 
 *,
@@ -36,7 +40,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: var(--grey-background);
-  font-family: "Rawengulk Regular", -apple-system, BlinkMacSystemFont,
+  font-family: "Rawengulk Demibold", -apple-system, BlinkMacSystemFont,
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;

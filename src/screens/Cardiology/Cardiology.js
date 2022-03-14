@@ -1,5 +1,6 @@
 import React from 'react'
 import './Cardiology.css'
+import cardiologist from '../../assets/imgs/cardiologist.jpg'
 
 const Cardiology = () => {
   React.useEffect(() => {
@@ -11,22 +12,24 @@ const Cardiology = () => {
       <a className='telephone-link' href='tel:+40745372390'>
         Tel: 0745 372 390
       </a>
-      <h4>Dr. Fehérvári Lajos</h4>
+      <h4 className='doctor'>Dr. Fehérvári Lajos</h4>
+
+      <div className='img-holder'>
+        <img src={cardiologist} alt='Dr. Fehérvári Lajos' />
+      </div>
       <p>
         A kardiológia a belgyógyászat azon szakága, mely a szív – és érrendszeri
         betegségekkel foglalkozik. A terület specialistái a kardiológusok.
         Tekintve, hogy a szív és érrendszeri megbetegedések a leggyakoribb
         halálozási okok közé sorolhatók, 45 év felett már preventív célból,
-        panasz esetén azonban sürgősen javasolt kardiológushoz fordulni.
-      </p>
-      <p>
-        A kardiológus feladatai közé tartozik a ritmuszavarok, az érelmeszesedés
+        panasz esetén azonban sürgősen javasolt kardiológushoz fordulni.A
+        kardiológus feladatai közé tartozik a ritmuszavarok, az érelmeszesedés
         okozta koszorúér-betegségek, a szívbillentyű zavarok, valamint a
         szívelégtelenség diagnosztizálása és kezelése, és a vérzsír eltérések
         korrigálása.
       </p>
-      <p>Hol vehető igénybe a vizsgálat?</p>
-      <p>
+
+      <p className='question'>
         Milyen tünetek esetén ajánlott felkeresni kardiológia szakrendelést?
       </p>
       <p>

@@ -6,8 +6,6 @@
   background-color: var(--main-red);
   height: 5.6rem;
   z-index: 100;
-  font-family: "Rawengulk Bold";
-  font-weight: bold;
 }
 
 .toolbar__logo {

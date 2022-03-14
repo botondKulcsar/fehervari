@@ -20,7 +20,7 @@ const CardContainer = () => {
       icon: <RiPsychotherapyLine />,
       title: 'Pszihiátria',
       content: '0743 992 618',
-      to: '/cardiology'
+      to: '/psychiatry'
     },
     {
       icon: <MdOutlinePsychology />,
