@@ -26,12 +26,14 @@ function App () {
   }
 
   return (
-    <div style={{ height: '100%' }}>
-      <Toolbar
-        drawerClickHandler={drawerToggleClickHandler}
-        show={sideDrawerOpen}
-      />
-      <SideDrawer show={sideDrawerOpen} hide={backdropClickHandler} />
+    <div className='app-wrapper'>
+      <header>
+        <Toolbar
+          drawerClickHandler={drawerToggleClickHandler}
+          show={sideDrawerOpen}
+        />
+        <SideDrawer show={sideDrawerOpen} hide={backdropClickHandler} />
+      </header>
       {/*sideDrawerOpen ? <Backdrop click={backdropClickHandler} /> : null */}
       <main style={{ marginTop: '56px' }}>
         <Container>
