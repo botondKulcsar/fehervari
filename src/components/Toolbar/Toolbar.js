@@ -85,7 +85,7 @@ const Toolbar = ({ drawerClickHandler, show }) => {
               </Link>
             </li>
             <li className='last-item'>
-              <Link className='toolbar__navigation-link' to='/'>
+              <Link className='toolbar__navigation-link' to='/contact'>
                 Kapcsolat
               </Link>
             </li>

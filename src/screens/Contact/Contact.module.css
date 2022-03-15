@@ -1,0 +1,75 @@
+.content {
+  padding: 4rem 2rem 2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+
+.iframe {
+  width: 40%;
+  box-shadow: var(--dark-shadow);
+}
+
+.description {
+  /* border: 1px solid red; */
+  align-self: start;
+  text-align: center;
+}
+
+.title,
+.subtitle {
+  font-family: "Rawengulk Regular";
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.title {
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 2.2rem;
+}
+
+.telephone,
+.email {
+  text-decoration: none;
+  font-size: 2rem;
+  background: var(--main-red);
+  color: white;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  box-shadow: var(--light-shadow);
+  transition: box-shadow 0.3s;
+
+  white-space: nowrap;
+}
+
+.telephone:hover,
+.telephone:focus,
+.email:hover,
+.email:focus {
+  box-shadow: var(--dark-shadow);
+}
+
+@media screen and (max-width: 992px) {
+  .content {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  .iframe {
+    width: 100%;
+  }
+
+  .description {
+    align-self: center;
+  }
+}

@@ -96,7 +96,11 @@ const SideDrawer = ({ show, hide }) => {
           </Link>
         </li>
         <li>
-          <Link className='sidebar__navigation-link' to='/' onClick={hide}>
+          <Link
+            className='sidebar__navigation-link'
+            to='/contact'
+            onClick={hide}
+          >
             Kapcsolat
           </Link>
         </li>

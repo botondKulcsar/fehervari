@@ -35,6 +35,10 @@
   margin: 0.5rem 0;
 }
 
+/* .side-drawer li:last-child {
+  margin-bottom: 2rem;
+} */
+
 .sidebar__navigation-link {
   color: var(--main-red);
   text-decoration: none;

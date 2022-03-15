@@ -11,6 +11,8 @@ import Psychiatry from './screens/Psychiatry/Psychiatry'
 import InternalMed from './screens/InternalMed/InternalMed'
 import FamilyMed from './screens/FamilyMed/FamilyMed'
 import Footer from './components/Footer/Footer'
+import Container from './components/Container/Container'
+import Contact from './screens/Contact/Contact'
 
 function App () {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false)
@@ -32,14 +34,17 @@ function App () {
       <SideDrawer show={sideDrawerOpen} hide={backdropClickHandler} />
       {/*sideDrawerOpen ? <Backdrop click={backdropClickHandler} /> : null */}
       <main style={{ marginTop: '56px' }}>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/cardiology' element={<Cardiology />} />
-          <Route path='/psychiatry' element={<Psychiatry />} />
-          <Route path='/internalmed' element={<InternalMed />} />
-          <Route path='/familymed' element={<FamilyMed />} />
-          <Route path='*' element={<Home />} />
-        </Routes>
+        <Container>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/cardiology' element={<Cardiology />} />
+            <Route path='/psychiatry' element={<Psychiatry />} />
+            <Route path='/internalmed' element={<InternalMed />} />
+            <Route path='/familymed' element={<FamilyMed />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='*' element={<Home />} />
+          </Routes>
+        </Container>
       </main>
       <Footer />
     </div>
