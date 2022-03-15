@@ -15,7 +15,7 @@ const Psychiatry = () => {
       <h4 className='doctor'>Dr. Frink-Dienes Eszter</h4>
 
       <div className={classes['img-holder']}>
-        <img src={psychiatrist} alt='Dr. Fehérvári Lajos' />
+        <img src={psychiatrist} alt='Dr. Frink-Dienes Eszter' />
       </div>
       <p>
         A pszichiátria, vagy elmegyógyászat, a lelki betegségek

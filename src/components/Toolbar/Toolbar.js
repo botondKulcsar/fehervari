@@ -20,7 +20,7 @@ const Toolbar = ({ drawerClickHandler, show }) => {
         <div className='toolbar__navigation-items'>
           <ul className='toolbar__navigation-items-list'>
             <li>
-              <Link className='toolbar__navigation-link' to='/'>
+              <Link className='toolbar__navigation-link' to='/familymed'>
                 Családorvosi rendelő
               </Link>
             </li>
@@ -40,7 +40,7 @@ const Toolbar = ({ drawerClickHandler, show }) => {
                   </Link>
                 </li>
                 <li>
-                  <Link className='toolbar__navigation-link' to='/'>
+                  <Link className='toolbar__navigation-link' to='/internalmed'>
                     Belgyógyászat
                   </Link>
                 </li>

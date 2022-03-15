@@ -8,6 +8,8 @@ import Home from './screens/home/Home'
 import { Routes, Route } from 'react-router-dom'
 import Cardiology from './screens/Cardiology/Cardiology'
 import Psychiatry from './screens/Psychiatry/Psychiatry'
+import InternalMed from './screens/InternalMed/InternalMed'
+import FamilyMed from './screens/FamilyMed/FamilyMed'
 import Footer from './components/Footer/Footer'
 
 function App () {
@@ -23,7 +25,10 @@ function App () {
 
   return (
     <div style={{ height: '100%' }}>
-      <Toolbar drawerClickHandler={drawerToggleClickHandler} show={sideDrawerOpen}/>
+      <Toolbar
+        drawerClickHandler={drawerToggleClickHandler}
+        show={sideDrawerOpen}
+      />
       <SideDrawer show={sideDrawerOpen} hide={backdropClickHandler} />
       {/*sideDrawerOpen ? <Backdrop click={backdropClickHandler} /> : null */}
       <main style={{ marginTop: '56px' }}>
@@ -31,6 +36,8 @@ function App () {
           <Route path='/' element={<Home />} />
           <Route path='/cardiology' element={<Cardiology />} />
           <Route path='/psychiatry' element={<Psychiatry />} />
+          <Route path='/internalmed' element={<InternalMed />} />
+          <Route path='/familymed' element={<FamilyMed />} />
           <Route path='*' element={<Home />} />
         </Routes>
       </main>

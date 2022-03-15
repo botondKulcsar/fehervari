@@ -13,7 +13,11 @@ const SideDrawer = ({ show, hide }) => {
     <nav className={drawerClasses}>
       <ul className='side-drawer__items'>
         <li>
-          <Link className='sidebar__navigation-link' to='/' onClick={hide}>
+          <Link
+            className='sidebar__navigation-link'
+            to='/familymed'
+            onClick={hide}
+          >
             Családorvosi rendelő
           </Link>
         </li>
@@ -43,7 +47,11 @@ const SideDrawer = ({ show, hide }) => {
             </li>
 
             <li>
-              <Link className='sidebar__navigation-link' to='/' onClick={hide}>
+              <Link
+                className='sidebar__navigation-link'
+                to='/internalmed'
+                onClick={hide}
+              >
                 Belgyógyászat
               </Link>
             </li>

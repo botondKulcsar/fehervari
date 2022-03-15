@@ -32,7 +32,7 @@ const CardContainer = () => {
       icon: <MdOutlineMedication />,
       title: 'Belgyógyászat',
       content: '0745 329 753',
-      to: '/cardiology'
+      to: '/internalmed'
     }
   ]
   return (
