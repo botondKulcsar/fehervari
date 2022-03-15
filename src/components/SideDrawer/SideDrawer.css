@@ -1,18 +1,20 @@
 .side-drawer {
-  font-family: "Rawengulk Bold";
+  font-family: "Rawengulk Regular";
   font-weight: bold;
-  height: 100%;
+  letter-spacing: 1px;
+  height: calc(100% - 5.6rem);
   background-color: white;
   box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
   position: fixed;
-  top: 0;
+  /* top: 0; */
+  bottom: 0;
   right: 0;
-  width: 70%;
-  max-width: 400px;
+  width: 100%;
+  /* max-width: 400px; */
   z-index: 200;
   transform: translateX(100%);
   transition: transform 0.3s ease-out;
-  overflow: scroll;
+  /* overflow: scroll; */
   background-image: var(--grey-background);
 }
 
@@ -41,39 +43,37 @@
   text-transform: uppercase;
   cursor: pointer;
   user-select: none;
-  /* font-weight: 500; */
 }
 
 .sidebar__navigation-submenu-items {
   background: transparent;
-  margin: -1rem 0;
+  margin: 0;
   list-style: none;
-  padding: 1rem 0.5rem;
+  padding: 0rem 0.5rem;
   padding-left: 1rem;
-  max-height: 0px;
+  height: 0px;
   overflow: hidden;
   transform-origin: top;
   flex-direction: column;
   gap: 0.8rem;
   display: flex;
   justify-content: center;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s;
 }
 
-.sidebar__navigation-submenu-items .sidebar__navigation-link {
-  display: none;
+input:checked + .types {
+  height: 10.9rem;
+  margin-top: 1.3rem;
+}
+input:checked + .physicians {
+  height: 14.8rem;
+  margin-top: 1.3rem;
+  /* overflow: scroll; */
 }
 
-input:checked + .sidebar__navigation-submenu-items {
-  max-height: max-content;
-  margin-top: 0rem;
-  margin-bottom: -1rem;
-  transition: all 0.3s ease-in;
-}
-
-input:checked + .sidebar__navigation-submenu-items .sidebar__navigation-link {
+/* input:checked + .sidebar__navigation-submenu-items .sidebar__navigation-link {
   display: inline;
-}
+} */
 
 input[type="checkbox"] {
   display: none;

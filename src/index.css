@@ -13,6 +13,14 @@
     url("fonts/RawengulkDemibold.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Rawengulk Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Rawengulk Regular"),
+    url("fonts/RawengulkRegular.woff") format("woff");
+}
+
 :root {
   --main-red: #da251c;
   --light-red: hsl(3, 77%, 58%);

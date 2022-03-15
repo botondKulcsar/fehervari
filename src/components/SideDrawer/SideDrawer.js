@@ -22,7 +22,7 @@ const SideDrawer = ({ show, hide }) => {
             Szakrendelés
           </label>
           <input type='checkbox' id='submenu' />
-          <ul className='sidebar__navigation-submenu-items'>
+          <ul className='sidebar__navigation-submenu-items types'>
             <li>
               <Link
                 className='sidebar__navigation-link'
@@ -33,7 +33,11 @@ const SideDrawer = ({ show, hide }) => {
               </Link>
             </li>
             <li>
-              <Link className='sidebar__navigation-link' to='/psychiatry' onClick={hide}>
+              <Link
+                className='sidebar__navigation-link'
+                to='/psychiatry'
+                onClick={hide}
+              >
                 Pszihiátria
               </Link>
             </li>
@@ -55,7 +59,7 @@ const SideDrawer = ({ show, hide }) => {
             Orvosok
           </label>
           <input type='checkbox' id='submenu1' />
-          <ul className='sidebar__navigation-submenu-items'>
+          <ul className='sidebar__navigation-submenu-items physicians'>
             <li>
               <Link className='sidebar__navigation-link' to='/' onClick={hide}>
                 Dr. Fehérvári Lajos

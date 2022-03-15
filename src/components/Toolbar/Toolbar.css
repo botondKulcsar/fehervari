@@ -1,4 +1,6 @@
 .toolbar {
+  font-family: 'Rawengulk Regular';
+  font-weight: bold;
   position: fixed;
   top: 0;
   left: 0;
@@ -36,7 +38,6 @@
   position: relative;
   white-space: nowrap;
   font-size: 2rem;
-  font-weight: bold;
 }
 
 .toolbar__navigation-link::after {
@@ -76,7 +77,6 @@
 .toolbar__navigation-submenu-parent:focus .toolbar__navigation-submenu-items {
   transform: translateY(0);
   opacity: 1;
-  /* z-index: 0; */
 }
 
 .toolbar__navigation-link:hover:after,
@@ -100,10 +100,6 @@
 li:hover {
   cursor: pointer;
 }
-
-/* .last-item {
-  padding-right: 0 !important;
-} */
 
 .spacer {
   flex: 1;

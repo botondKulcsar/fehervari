@@ -4,7 +4,7 @@ import DrawerToggleButton from '../SideDrawer/DrawerToggleButton'
 import logo_small from '../../assets/imgs/logo_small.jpeg'
 import { Link } from 'react-router-dom'
 
-const Toolbar = ({ drawerClickHandler }) => {
+const Toolbar = ({ drawerClickHandler, show }) => {
   return (
     <header className='toolbar'>
       <nav className='toolbar__navigation'>
@@ -15,7 +15,7 @@ const Toolbar = ({ drawerClickHandler }) => {
         </div>
         <div className='spacer'></div>
         <div className='toolbar__toggle-button'>
-          <DrawerToggleButton click={drawerClickHandler} />
+          <DrawerToggleButton click={drawerClickHandler} show={show} />
         </div>
         <div className='toolbar__navigation-items'>
           <ul className='toolbar__navigation-items-list'>

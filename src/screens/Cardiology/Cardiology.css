@@ -1,13 +1,13 @@
 .wrapper {
   padding: 2rem;
   background-image: var(--grey-background);
+  
 }
 
 .img-holder {
   width: 35%;
   overflow: hidden;
   float: right;
-  /* border: 2px solid var(--main-red); */
   box-shadow: var(--light-shadow);
   margin-left: 1rem;
 }
@@ -21,6 +21,11 @@
 .img-holder img {
   width: 100%;
   display: block;
+}
+
+.title, .telephone-link, .doctor, .subtitle, h4, .question {
+  font-family: "Rawengulk Regular";
+  font-weight: 600;
 }
 
 .title {

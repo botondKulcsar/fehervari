@@ -3,7 +3,7 @@ import './App.css'
 
 import Toolbar from './components/Toolbar/Toolbar'
 import SideDrawer from './components/SideDrawer/SideDrawer'
-import Backdrop from './components/Backdrop/Backdrop'
+// import Backdrop from './components/Backdrop/Backdrop'
 import Home from './screens/home/Home'
 import { Routes, Route } from 'react-router-dom'
 import Cardiology from './screens/Cardiology/Cardiology'
@@ -23,9 +23,9 @@ function App () {
 
   return (
     <div style={{ height: '100%' }}>
-      <Toolbar drawerClickHandler={drawerToggleClickHandler} />
+      <Toolbar drawerClickHandler={drawerToggleClickHandler} show={sideDrawerOpen}/>
       <SideDrawer show={sideDrawerOpen} hide={backdropClickHandler} />
-      {sideDrawerOpen ? <Backdrop click={backdropClickHandler} /> : null}
+      {/*sideDrawerOpen ? <Backdrop click={backdropClickHandler} /> : null */}
       <main style={{ marginTop: '56px' }}>
         <Routes>
           <Route path='/' element={<Home />} />

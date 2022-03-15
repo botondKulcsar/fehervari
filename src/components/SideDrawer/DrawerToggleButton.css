@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  height: 24px;
-  width: 30px;
+  height: 2.4rem;
+  width: 3rem;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -16,9 +16,20 @@
 }
 
 .toggle-button__line {
-  width: 30px;
+  width: 3rem;
   height: 2px;
   background: white;
+  transition: all 0.3s;
 }
 
+.crossed-first {
+  transform: translateY(8px) rotate(135deg);
+}
 
+.crossed-middle {
+  transform: translateX(-400%);
+  opacity: 0;
+}
+.crossed-last {
+  transform: translateY(-8px) rotate(-135deg);
+}
