@@ -4,6 +4,8 @@
   align-items: center;
   gap: 2rem;
   justify-content: space-evenly;
+  background-image: var(--grey-background);
+  background-color: var(--background-color);
 }
 
 .iframe {

@@ -4,6 +4,7 @@ import { GiRotaryPhone } from 'react-icons/gi'
 import { MdEmail, MdLocationPin } from 'react-icons/md'
 
 const Footer = () => {
+
   return (
     <footer className={classes.footer}>
       <div className={classes.flex}>
@@ -31,6 +32,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
+      <p className={classes.copyright}>&copy; Fehervari Medcenter</p>
     </footer>
   )
 }
