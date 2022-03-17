@@ -25,9 +25,7 @@ const Toolbar = ({ drawerClickHandler, show }) => {
               </Link>
             </li>
             <li className='toolbar__navigation-submenu-parent'>
-              <Link className='toolbar__navigation-link' to='/'>
-                Szakrendelés
-              </Link>
+              <span className='toolbar__navigation-link'>Szakrendelés</span>
               <ul className='toolbar__navigation-submenu-items'>
                 <li>
                   <Link className='toolbar__navigation-link' to='/cardiology'>
@@ -52,9 +50,7 @@ const Toolbar = ({ drawerClickHandler, show }) => {
               </Link>
             </li>
             <li className='toolbar__navigation-submenu-parent'>
-              <Link className='toolbar__navigation-link' to='/'>
-                Orvosok
-              </Link>
+              <span className='toolbar__navigation-link'>Orvosok</span>
 
               <ul className='toolbar__navigation-submenu-items'>
                 <li>

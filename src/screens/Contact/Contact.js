@@ -9,28 +9,34 @@ const Contact = () => {
       <div className={classes.description}>
         <h1 className={classes.title}>Elérhetőség</h1>
         <h2 className={classes.subtitle}>
-          <MdLocationPin />
+          <a
+            target='_blank'
+            rel='noreferrer'
+            href='https://www.google.com/maps/place/Str.+Violetelor+6,+T%C3%A2rgu+Mure%C8%99+547176/@46.538436,24.5626635,17z/data=!4m2!3m1!1s0x474bb7b5a99f630b:0x1190a4c1fa269a67'
+          >
+            <MdLocationPin className='icon' />
+          </a>
           <span>Cím</span>
         </h2>
         <p>Marosvásárhely, Románia</p>
         <p>Violetelor utca 42 szám, B tömbház, 3-as apartman</p>
         <h2 className={classes.subtitle}>
-          <GiRotaryPhone />
+          <a href='tel:+40365424596'>
+            <GiRotaryPhone className='icon' />
+          </a>
           <span>Telefon</span>
         </h2>
         <p>
-          <a className={classes.telephone} href='tel:+40365424596'>
-            0365 424 596
-          </a>
+          <span>0365 424 596</span>
         </p>
         <h2 className={classes.subtitle}>
-          <MdEmail />
+          <a href='mailto:cmi.fehervari@yahoo.com'>
+            <MdEmail className='icon' />
+          </a>
           <span>Email</span>
         </h2>
         <p>
-          <a className={classes.email} href='mailto:cmi.fehervari@yahoo.com'>
-            cmi.fehervari@yahoo.com
-          </a>
+          <span>cmi.fehervari@yahoo.com</span>
         </p>
       </div>
       <iframe

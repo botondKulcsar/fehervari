@@ -2,6 +2,10 @@ import React from 'react'
 import classes from './Physician.module.css'
 import { useParams } from 'react-router-dom'
 
+import drfehervarilajos from '../../assets/imgs/dr-fehervari-lajos.jpeg'
+import drfinkdieneseszter from '../../assets/imgs/dr-frink-dienes-eszter.jpeg'
+import drfehervarilazarmonika from '../../assets/imgs/dr-fehervari-lazar-monika.jpeg'
+
 const physicians = [
   {
     name: 'dr-fehervari-lajos',
@@ -13,13 +17,15 @@ const physicians = [
       'Kardiológia szakvizsga (2018)',
       'PhD fokozat (2021)'
     ],
+
     services: [
       'Kardiológiai konzultáció',
       'EKG (Elektrokardiográfia)',
       'Echocardiográfia (szív ultrahang)',
       'ABPM (24 órás vérnyomásmérés',
       'Holter (24 órás EKG vizsgálat)'
-    ]
+    ],
+    img: drfehervarilajos
   },
   {
     name: 'dr-frink-dienes-eszter',
@@ -36,7 +42,8 @@ const physicians = [
       'Rendszerszemléletű pár- és családterapeuta (folyamatban)',
       'Családorvos rezidens (folyamatban)'
     ],
-    services: ['Pszihiátriai kozultáció']
+    services: ['Pszihiátriai kozultáció'],
+    img: drfinkdieneseszter
   },
   {
     name: 'dr-fehervari-lazar-monika',
@@ -47,7 +54,8 @@ const physicians = [
       'Családorvos szakvizsga (2011)',
       'Családorvos főorvosi szakvizsga (2015)'
     ],
-    services: ['']
+    services: [],
+    img: drfehervarilazarmonika
   },
   {
     name: 'dr-rab-andrea',
@@ -62,37 +70,50 @@ const physicians = [
       'Belgyógyászati konzultáció',
       'Hasi ultrahangvizsgálat',
       'Artériás és vénás Dopple-ultrahangvizsgálat'
-    ]
+    ],
+    img: ''
   }
 ]
 
 const Physician = () => {
   const { name } = useParams()
-  console.log(name)
 
   const physician = physicians.find(ph => ph.name === name)
-  console.log(physician)
+
   return (
-    <div>
+    <div className={classes.wrapper}>
       <h1 className={classes.name}>{physician.displayName}</h1>
-      <h3>Szakterületek</h3>
-      <ul>
-        {physician.fields.map(f => (
-          <li key={f}>{f}</li>
-        ))}
-      </ul>
-      <h3>Végzettségek</h3>
-      <ul>
-        {physician.education.map(ed => (
-          <li key={ed}>{ed}</li>
-        ))}
-      </ul>
-      <h3>Szolgáltatások</h3>
-      <ul>
-        {physician.services.map(s => (
-          <li key={s}>{s}</li>
-        ))}
-      </ul>
+      <div className={classes.flex}>
+        <div className={classes.description}>
+          <h2>Szakterületek</h2>
+          <ul>
+            {physician.fields.map(f => (
+              <li key={f}>{f}</li>
+            ))}
+          </ul>
+          <h2>Végzettségek</h2>
+          <ul>
+            {physician.education.map(ed => (
+              <li key={ed}>{ed}</li>
+            ))}
+          </ul>
+          {physician.services.length ? (
+            <>
+              <h2>Szolgáltatások</h2>
+              <ul>
+                {physician.services.map(s => (
+                  <li key={s}>{s}</li>
+                ))}
+              </ul>
+            </>
+          ) : null}
+        </div>
+        {physician.img ? (
+          <div className={classes.imgholder}>
+            <img src={physician.img} alt={physician.displayName} />
+          </div>
+        ) : null}
+      </div>
     </div>
   )
 }

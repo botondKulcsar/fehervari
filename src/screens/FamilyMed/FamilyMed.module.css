@@ -2,8 +2,6 @@
   flex: 0 0 50%;
   overflow: hidden;
   align-self: center;
-  /* float: right; */
-  /* border: 2px solid var(--main-red); */
   box-shadow: var(--light-shadow);
   margin-left: 1rem;
 }

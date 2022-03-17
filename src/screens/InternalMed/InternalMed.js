@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './InternalMed.module.css'
 // import internalMed from '../../assets/imgs/internalMed.jpg'
+import { GiRotaryPhone } from 'react-icons/gi'
 
 const InternalMed = () => {
   React.useEffect(() => {
@@ -10,7 +11,7 @@ const InternalMed = () => {
     <div className='wrapper'>
       <h2 className='title'>Belgyógyászat</h2>
       <a className='telephone-link' href='tel:+40745329753'>
-        Tel: 0745 329 753
+        <GiRotaryPhone className='icon' /> <span>0745 329 753</span>
       </a>
       <h4 className='doctor'>Dr. Rab Andrea</h4>
 

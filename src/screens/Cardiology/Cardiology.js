@@ -1,16 +1,19 @@
 import React from 'react'
 import './Cardiology.css'
 import cardiologist from '../../assets/imgs/cardiologist.jpeg'
+import { GiRotaryPhone } from 'react-icons/gi'
 
 const Cardiology = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+
+  console.log(cardiologist)
   return (
     <div className='wrapper'>
       <h2 className='title'>Kardiológia</h2>
       <a className='telephone-link' href='tel:+40745372390'>
-        Tel: 0745 372 390
+        <GiRotaryPhone className='icon' /> <span>0745 372 390</span>
       </a>
       <h4 className='doctor'>Dr. Fehérvári Lajos</h4>
 

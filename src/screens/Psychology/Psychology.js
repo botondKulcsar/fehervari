@@ -1,4 +1,5 @@
 import React from 'react'
+import { GiRotaryPhone } from 'react-icons/gi'
 import classes from './Psychology.module.css'
 
 const Psychology = () => {
@@ -10,7 +11,7 @@ const Psychology = () => {
     <div className='wrapper'>
       <h2 className='title'>Pszihológia</h2>
       <a className='telephone-link' href='tel:+40720020840'>
-        Tel: 0720 020 840
+        <GiRotaryPhone className='icon' /> <span>0720 020 840</span>
       </a>
       <h4 className='doctor'>Filip Laura pszihológus</h4>
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './FamilyMed.module.css'
 import familyMed from '../../assets/imgs/familyMed.jpeg'
+import { GiRotaryPhone } from 'react-icons/gi'
 
 const Psychiatry = () => {
   React.useEffect(() => {
@@ -12,7 +13,7 @@ const Psychiatry = () => {
         <div>
           <h2 className='title'>Családorvosi rendelő</h2>
           <a className='telephone-link' href='tel:+40365424596'>
-            Tel: 0365 424 596
+            <GiRotaryPhone className='icon' /> <span>0365 424 596</span>
           </a>
           <h4 className='doctor'>Dr. Fehérvári Lázár Mónika</h4>
           <h4 className='doctor'>Dr. Bartel Klára</h4>

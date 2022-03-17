@@ -1,0 +1,45 @@
+.wrapper {
+  padding: 4rem;
+  background-image: var(--grey-background);
+  background-color: var(--background-color);
+  box-shadow: var(--light-shadow);
+}
+
+.flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description {
+    order: 1;
+  }
+}
+
+.name {
+  font-family: "Rawengulk Bold";
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 1rem auto 4rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.imgholder img {
+  width: 100%;
+  height: auto;
+  box-shadow: var(--dark-shadow);
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-family: "Rawengulk Regular";
+  font-weight: 600;
+}

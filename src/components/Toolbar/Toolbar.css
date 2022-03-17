@@ -1,5 +1,5 @@
 .toolbar {
-  font-family: 'Rawengulk Regular';
+  font-family: "Rawengulk Regular";
   font-weight: bold;
   position: fixed;
   top: 0;
@@ -83,6 +83,15 @@
 .toolbar__navigation-link:active:after {
   width: 100%;
   left: 0;
+}
+
+span.toolbar__navigation-link {
+  user-select: none;
+}
+
+span.toolbar__navigation-link:hover:after {
+  left: 50%;
+  width: 0%;
 }
 
 .toolbar__navigation-items-list {
