@@ -76,6 +76,9 @@ const physicians = [
 ]
 
 const Physician = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const { name } = useParams()
 
   const physician = physicians.find(ph => ph.name === name)
