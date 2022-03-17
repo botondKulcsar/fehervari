@@ -47,16 +47,16 @@ h4,
   background: var(--main-red);
   color: white;
   display: flex;
-  gap: 1rem;
-  max-width: max-content;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   border-radius: 3px;
   box-shadow: var(--light-shadow);
   transition: box-shadow 0.3s;
   margin-left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .icon {

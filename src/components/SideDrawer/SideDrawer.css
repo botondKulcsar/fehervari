@@ -22,10 +22,10 @@
 }
 
 .side-drawer__items {
-  margin-top: 4rem;
+  padding: 3rem;
   list-style: none;
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
