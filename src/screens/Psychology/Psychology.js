@@ -1,0 +1,33 @@
+import React from 'react'
+import classes from './Psychology.module.css'
+
+const Psychology = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+  return (
+    <div className='wrapper'>
+      <h2 className='title'>Pszihológia</h2>
+      <a className='telephone-link' href='tel:+40720020840'>
+        Tel: 0720 020 840
+      </a>
+      <h4 className='doctor'>Filip Laura pszihológus</h4>
+
+      {/*<div className={classes['img-holder']}>
+        <img src={psychiatrist} alt='Dr. Frink-Dienes Eszter' />
+      </div>*/}
+
+      <h3 className={classes.subtitle}>Egyéni pszichológiai tanácsadás</h3>
+      <p>
+        A pszichológiai tanácsadás során kísérjük és támogatjuk szükség esetén
+        közvetlen tanácsadással látjuk el a hozzánk forduló klienseket.
+        Tanácsadásra érkezhetnek egészen konkrét élethelyzetre vonatkozó
+        bizonytalanságokkal, szorongásokkal és elakadásokkal, de lehet cél a
+        kiegyensúlyozottság és a mélyebb önismeret felé törekvés.
+      </p>
+    </div>
+  )
+}
+
+export default Psychology

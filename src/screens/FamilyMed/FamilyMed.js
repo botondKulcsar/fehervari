@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './FamilyMed.module.css'
-import familyMed from '../../assets/imgs/familyMed.jpg'
+import familyMed from '../../assets/imgs/familyMed.jpeg'
 
 const Psychiatry = () => {
   React.useEffect(() => {

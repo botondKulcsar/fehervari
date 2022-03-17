@@ -58,7 +58,11 @@ const SideDrawer = ({ show, hide }) => {
           </ul>
         </li>
         <li>
-          <Link className='sidebar__navigation-link' to='/' onClick={hide}>
+          <Link
+            className='sidebar__navigation-link'
+            to='/psychology'
+            onClick={hide}
+          >
             Pszihológia
           </Link>
         </li>
@@ -69,22 +73,38 @@ const SideDrawer = ({ show, hide }) => {
           <input type='checkbox' id='submenu1' />
           <ul className='sidebar__navigation-submenu-items physicians'>
             <li>
-              <Link className='sidebar__navigation-link' to='/' onClick={hide}>
+              <Link
+                className='sidebar__navigation-link'
+                to='/physicians/dr-fehervari-lajos'
+                onClick={hide}
+              >
                 Dr. Fehérvári Lajos
               </Link>
             </li>
             <li>
-              <Link className='sidebar__navigation-link' to='/' onClick={hide}>
+              <Link
+                className='sidebar__navigation-link'
+                to='/physicians/dr-fehervari-lazar-monika'
+                onClick={hide}
+              >
                 Dr. Fehérvári Lázár Mónika
               </Link>
             </li>
             <li>
-              <Link className='sidebar__navigation-link' to='/' onClick={hide}>
+              <Link
+                className='sidebar__navigation-link'
+                to='/physicians/dr-frink-dienes-eszter'
+                onClick={hide}
+              >
                 Dr. Frink-Dienes Eszter
               </Link>
             </li>
             <li>
-              <Link className='sidebar__navigation-link' to='/' onClick={hide}>
+              <Link
+                className='sidebar__navigation-link'
+                to='/physicians/dr-rab-andrea'
+                onClick={hide}
+              >
                 Dr. Rab Andrea
               </Link>
             </li>

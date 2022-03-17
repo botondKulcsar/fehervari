@@ -1,6 +1,6 @@
 import React from 'react'
 import './Cardiology.css'
-import cardiologist from '../../assets/imgs/cardiologist.jpg'
+import cardiologist from '../../assets/imgs/cardiologist.jpeg'
 
 const Cardiology = () => {
   React.useEffect(() => {

@@ -47,7 +47,7 @@ const Toolbar = ({ drawerClickHandler, show }) => {
               </ul>
             </li>
             <li>
-              <Link className='toolbar__navigation-link' to='/'>
+              <Link className='toolbar__navigation-link' to='/psychology'>
                 Pszihológia
               </Link>
             </li>
@@ -58,22 +58,34 @@ const Toolbar = ({ drawerClickHandler, show }) => {
 
               <ul className='toolbar__navigation-submenu-items'>
                 <li>
-                  <Link className='toolbar__navigation-link' to='/'>
+                  <Link
+                    className='toolbar__navigation-link'
+                    to='/physicians/dr-fehervari-lajos'
+                  >
                     Dr. Fehérvári Lajos
                   </Link>
                 </li>
                 <li>
-                  <Link className='toolbar__navigation-link' to='/'>
+                  <Link
+                    className='toolbar__navigation-link'
+                    to='/physicians/dr-fehervari-lazar-monika'
+                  >
                     Dr. Fehérvári Lázár Mónika
                   </Link>
                 </li>
                 <li>
-                  <Link className='toolbar__navigation-link' to='/'>
+                  <Link
+                    className='toolbar__navigation-link'
+                    to='/physicians/dr-frink-dienes-eszter'
+                  >
                     Dr. Frink-Dienes Eszter
                   </Link>
                 </li>
                 <li>
-                  <Link className='toolbar__navigation-link' to='/'>
+                  <Link
+                    className='toolbar__navigation-link'
+                    to='/physicians/dr-rab-andrea'
+                  >
                     Dr. Rab Andrea
                   </Link>
                 </li>

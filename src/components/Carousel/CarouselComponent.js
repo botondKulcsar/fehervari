@@ -1,8 +1,8 @@
 import React from 'react'
 import { Carousel } from 'react-responsive-carousel'
-import img1 from '../../assets/imgs/_DSC4637.jpg'
-import img2 from '../../assets/imgs/_DSC4700.jpg'
-import img3 from '../../assets/imgs/_DSC4739.jpg'
+import img1 from '../../assets/imgs/_DSC4637.jpeg'
+import img2 from '../../assets/imgs/_DSC4700.jpeg'
+import img3 from '../../assets/imgs/_DSC4739.jpeg'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 const CarouselComponent = () => {
