@@ -42,12 +42,14 @@ h4,
 }
 
 .telephone-link {
+  width: fit-content;
   text-decoration: none;
   font-size: 2rem;
   background: var(--main-red);
   color: white;
   display: flex;
   align-items: center;
+  gap: 1.5rem;
   padding: 1rem;
   border-radius: 3px;
   box-shadow: var(--light-shadow);
@@ -55,12 +57,19 @@ h4,
   margin-left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
-  flex-wrap: wrap;
+
   justify-content: center;
 }
 
+@media only screen and (max-width: 375px) {
+  .telephone-link {
+    gap: 0;
+    flex-wrap: wrap;
+  }
+}
+
 .icon {
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .telephone-link:hover .icon {
