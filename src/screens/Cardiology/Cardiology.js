@@ -8,7 +8,6 @@ const Cardiology = () => {
     window.scrollTo(0, 0)
   }, [])
 
-  console.log(cardiologist)
   return (
     <div className='wrapper'>
       <h2 className='title'>Kardiológia</h2>
