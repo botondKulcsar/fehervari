@@ -22,7 +22,7 @@ const Contact = () => {
           <span>Cím</span>
         </h2>
         <p>Marosvásárhely, Románia</p>
-        <p>Violetelor utca 42 szám, B tömbház, 3-as apartman</p>
+        <p>Violetelor utca 6 szám, B tömbház, 3-as ajtó</p>
         <h2 className={classes.subtitle}>
           <a href='tel:+40365424596'>
             <GiRotaryPhone className='icon' />
