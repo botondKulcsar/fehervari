@@ -33,9 +33,9 @@
   font-size: 2.6rem;
   text-decoration: none;
   color: var(--main-red);
-  animation: pulsate 2s linear 0.3s infinite;
   display: inline-block;
-  padding: .5rem .5rem 0rem;
+  padding: 0.5rem 0.5rem 0rem;
+  animation: pulsate 2s linear 0.3s infinite;
 }
 
 @keyframes pulsate {
@@ -44,7 +44,6 @@
   }
   50% {
     transform: scale(1.5);
-    
   }
   100% {
     transform: scale(1);

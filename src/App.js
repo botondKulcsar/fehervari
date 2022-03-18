@@ -15,6 +15,7 @@ import InternalMed from './screens/InternalMed/InternalMed'
 import FamilyMed from './screens/FamilyMed/FamilyMed'
 import Contact from './screens/Contact/Contact'
 import Physician from './screens/Physician/Physician'
+import PricesList from './screens/PricesList/PricesList'
 
 function App () {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false)
@@ -48,6 +49,7 @@ function App () {
             <Route path='/psychology' element={<Psychology />} />
             <Route path='/physicians/:name' element={<Physician />} />
             <Route path='/contact' element={<Contact />} />
+            <Route path='/prices' element={<PricesList />} />
             <Route path='*' element={<Home />} />
           </Routes>
         </Container>

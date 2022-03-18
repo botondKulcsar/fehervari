@@ -9,7 +9,7 @@ const Psychology = () => {
 
   return (
     <div className='wrapper'>
-      <h2 className='title'>Pszihológia</h2>
+      <h2 className='title'>Pszichológia</h2>
       <a className='telephone-link' href='tel:+40720020840'>
         <GiRotaryPhone className='icon' /> <span>0720 020 840</span>
       </a>

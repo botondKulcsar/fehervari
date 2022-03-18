@@ -1,0 +1,114 @@
+.price {
+  text-align: center;
+  padding: 1rem 4rem;
+  box-shadow: var(--light-shadow);
+  background-image: var(--grey-background);
+  background-color: var(--background-color);
+  background-size: cover;
+  transition: all 0.3s;
+}
+
+.price:hover {
+  box-shadow: var(--dark-shadow);
+}
+
+.domain {
+  font-size: 2.5rem;
+}
+
+.domain__link {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  color: black;
+  font-family: "Rawengulk Bold";
+  text-decoration: none;
+}
+
+.domain__link span:last-child {
+  position: relative;
+}
+
+.domain__link span:last-child::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0%;
+  left: 50%;
+  height: 2px;
+  background: white;
+  transition: all 0.3s;
+}
+
+.domain__link:hover .icon__link {
+  transform: scale(1.3);
+}
+
+.domain__link:hover span:last-child::after {
+  transform: translateX(0);
+  width: 100%;
+  left: 0;
+  background: var(--main-red);
+}
+
+.icon__link {
+  color: var(--main-red);
+  font-size: 3rem;
+  transition: transform 0.3s;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.physician {
+  margin-top: -1rem;
+}
+
+.physician * {
+  font-size: 1.6rem;
+  font-family: "Rawengulk Bold";
+  color: black;
+  text-decoration: none;
+  margin-bottom: 0;
+  transition: color 0.3s;
+}
+
+.physician:hover * {
+  color: var(--main-red);
+}
+
+.speciality {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.telephone {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 1rem;
+  color: black;
+  font-family: "Rawengulk Bold";
+}
+
+.icon {
+  color: var(--main-red);
+  font-size: 2.5rem;
+  animation: pulsate 2s linear 0.3s infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

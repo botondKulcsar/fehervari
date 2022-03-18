@@ -1,8 +1,11 @@
-import React from 'react'
+import { useEffect } from 'react'
 import './SideDrawer.css'
 import { Link } from 'react-router-dom'
 
 const SideDrawer = ({ show, hide }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   let drawerClasses = 'side-drawer'
 
   if (show) {
@@ -42,7 +45,7 @@ const SideDrawer = ({ show, hide }) => {
                 to='/psychiatry'
                 onClick={hide}
               >
-                Pszihiátria
+                Pszichiátria
               </Link>
             </li>
 
@@ -63,7 +66,7 @@ const SideDrawer = ({ show, hide }) => {
             to='/psychology'
             onClick={hide}
           >
-            Pszihológia
+            Pszichológia
           </Link>
         </li>
         <li className='sidebar__navigation-submenu-parent'>
@@ -111,7 +114,11 @@ const SideDrawer = ({ show, hide }) => {
           </ul>
         </li>
         <li>
-          <Link className='sidebar__navigation-link' to='/' onClick={hide}>
+          <Link
+            className='sidebar__navigation-link'
+            to='/prices'
+            onClick={hide}
+          >
             Árak
           </Link>
         </li>

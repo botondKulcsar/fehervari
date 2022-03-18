@@ -34,7 +34,7 @@ const Toolbar = ({ drawerClickHandler, show }) => {
                 </li>
                 <li>
                   <Link className='toolbar__navigation-link' to='/psychiatry'>
-                    Pszihiátria
+                    Pszichiátria
                   </Link>
                 </li>
                 <li>
@@ -46,7 +46,7 @@ const Toolbar = ({ drawerClickHandler, show }) => {
             </li>
             <li>
               <Link className='toolbar__navigation-link' to='/psychology'>
-                Pszihológia
+                Pszichológia
               </Link>
             </li>
             <li className='toolbar__navigation-submenu-parent'>
@@ -88,7 +88,7 @@ const Toolbar = ({ drawerClickHandler, show }) => {
               </ul>
             </li>
             <li>
-              <Link className='toolbar__navigation-link' to='/'>
+              <Link className='toolbar__navigation-link' to='/prices'>
                 Árak
               </Link>
             </li>

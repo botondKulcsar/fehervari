@@ -1,0 +1,12 @@
+.prices {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .prices {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
