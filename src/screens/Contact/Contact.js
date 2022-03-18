@@ -1,9 +1,12 @@
-import React from 'react'
+import { useEffect } from 'react'
 import classes from './Contact.module.css'
 import { GiRotaryPhone } from 'react-icons/gi'
 import { MdEmail, MdLocationPin } from 'react-icons/md'
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className={classes.content}>
       <div className={classes.description}>

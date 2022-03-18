@@ -1,10 +1,10 @@
-import React from 'react'
+import { useEffect } from 'react'
 import './Cardiology.css'
 import cardiologist from '../../assets/imgs/cardiologist.jpeg'
 import { GiRotaryPhone } from 'react-icons/gi'
 
 const Cardiology = () => {
-  React.useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 

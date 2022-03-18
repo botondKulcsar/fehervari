@@ -1,10 +1,10 @@
-import React from 'react'
+import { useEffect } from 'react'
 import classes from './InternalMed.module.css'
 // import internalMed from '../../assets/imgs/internalMed.jpg'
 import { GiRotaryPhone } from 'react-icons/gi'
 
 const InternalMed = () => {
-  React.useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
   return (

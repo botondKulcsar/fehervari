@@ -6,13 +6,13 @@ import SideDrawer from './components/SideDrawer/SideDrawer'
 // import Backdrop from './components/Backdrop/Backdrop'
 import Home from './screens/home/Home'
 import { Routes, Route } from 'react-router-dom'
+import Footer from './components/Footer/Footer'
+import Container from './components/Container/Container'
 import Cardiology from './screens/Cardiology/Cardiology'
 import Psychiatry from './screens/Psychiatry/Psychiatry'
 import Psychology from './screens/Psychology/Psychology'
 import InternalMed from './screens/InternalMed/InternalMed'
 import FamilyMed from './screens/FamilyMed/FamilyMed'
-import Footer from './components/Footer/Footer'
-import Container from './components/Container/Container'
 import Contact from './screens/Contact/Contact'
 import Physician from './screens/Physician/Physician'
 
@@ -37,7 +37,7 @@ function App () {
         <SideDrawer show={sideDrawerOpen} hide={backdropClickHandler} />
       </header>
       {/*sideDrawerOpen ? <Backdrop click={backdropClickHandler} /> : null */}
-      <main style={{ marginTop: '56px' }}>
+      <main>
         <Container>
           <Routes>
             <Route path='/' element={<Home />} />

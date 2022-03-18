@@ -26,7 +26,7 @@ const CardContainer = () => {
       icon: <MdOutlinePsychology />,
       title: 'Pszichológia',
       content: '0720 020 840',
-      to: '/cardiology'
+      to: '/psychology'
     },
     {
       icon: <MdOutlineMedication />,

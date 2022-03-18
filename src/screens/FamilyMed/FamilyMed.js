@@ -1,10 +1,10 @@
-import React from 'react'
+import { useEffect } from 'react'
 import classes from './FamilyMed.module.css'
 import familyMed from '../../assets/imgs/familyMed.jpeg'
 import { GiRotaryPhone } from 'react-icons/gi'
 
 const Psychiatry = () => {
-  React.useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
   return (

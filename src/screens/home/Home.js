@@ -1,9 +1,9 @@
-import React from 'react'
+import { useEffect } from 'react'
 import CardContainer from '../../components/CardContainer/CardContainer'
 import CarouselComponent from '../../components/Carousel/CarouselComponent'
 
 const Home = () => {
-  React.useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
   return (

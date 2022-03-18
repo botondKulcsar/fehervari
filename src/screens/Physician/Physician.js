@@ -1,4 +1,4 @@
-import React from 'react'
+import { useEffect } from 'react'
 import classes from './Physician.module.css'
 import { useParams } from 'react-router-dom'
 
@@ -76,7 +76,7 @@ const physicians = [
 ]
 
 const Physician = () => {
-  React.useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
   const { name } = useParams()

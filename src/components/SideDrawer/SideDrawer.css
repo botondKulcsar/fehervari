@@ -5,7 +5,6 @@
   height: calc(100% - 5.6rem);
   background-color: white;
   box-shadow: var(--dark-shadow);
-  /* box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5); */
   position: fixed;
   bottom: 0;
   right: 0;
@@ -28,7 +27,7 @@
   gap: 2rem;
   flex-direction: column;
   justify-content: flex-start;
-  height: 100%;
+  min-height: 100%;
 }
 
 .side-drawer li {
@@ -75,4 +74,15 @@ input:checked + .physicians {
 
 input[type="checkbox"] {
   display: none;
+}
+
+@media only screen and (max-width: 375px) {
+
+  .side-drawer__items {
+    padding: 1.5rem 3rem;
+  }
+
+  .sidebar__navigation-submenu-items {
+    gap: 0.65rem;
+  }
 }

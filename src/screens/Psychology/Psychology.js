@@ -1,9 +1,9 @@
-import React from 'react'
+import { useEffect } from 'react'
 import { GiRotaryPhone } from 'react-icons/gi'
 import classes from './Psychology.module.css'
 
 const Psychology = () => {
-  React.useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 
