@@ -18,7 +18,7 @@ const SideDrawer = ({ show, hide }) => {
         <li>
           <Link
             className='sidebar__navigation-link'
-            to='/familymed'
+            to='/csaladorvos'
             onClick={hide}
           >
             Családorvosi rendelő
@@ -33,7 +33,7 @@ const SideDrawer = ({ show, hide }) => {
             <li>
               <Link
                 className='sidebar__navigation-link'
-                to='/cardiology'
+                to='/kardiologia'
                 onClick={hide}
               >
                 Kardiológia
@@ -42,7 +42,7 @@ const SideDrawer = ({ show, hide }) => {
             <li>
               <Link
                 className='sidebar__navigation-link'
-                to='/psychiatry'
+                to='/pszichiatria'
                 onClick={hide}
               >
                 Pszichiátria
@@ -52,7 +52,7 @@ const SideDrawer = ({ show, hide }) => {
             <li>
               <Link
                 className='sidebar__navigation-link'
-                to='/internalmed'
+                to='/belgyogyaszat'
                 onClick={hide}
               >
                 Belgyógyászat
@@ -63,7 +63,7 @@ const SideDrawer = ({ show, hide }) => {
         <li>
           <Link
             className='sidebar__navigation-link'
-            to='/psychology'
+            to='/pszichologia'
             onClick={hide}
           >
             Pszichológia
@@ -78,7 +78,7 @@ const SideDrawer = ({ show, hide }) => {
             <li>
               <Link
                 className='sidebar__navigation-link'
-                to='/physicians/dr-fehervari-lajos'
+                to='/orvosok/dr-fehervari-lajos'
                 onClick={hide}
               >
                 Dr. Fehérvári Lajos
@@ -87,7 +87,7 @@ const SideDrawer = ({ show, hide }) => {
             <li>
               <Link
                 className='sidebar__navigation-link'
-                to='/physicians/dr-fehervari-lazar-monika'
+                to='/orvosok/dr-fehervari-lazar-monika'
                 onClick={hide}
               >
                 Dr. Fehérvári Lázár Mónika
@@ -96,7 +96,7 @@ const SideDrawer = ({ show, hide }) => {
             <li>
               <Link
                 className='sidebar__navigation-link'
-                to='/physicians/dr-frink-dienes-eszter'
+                to='/orvosok/dr-frink-dienes-eszter'
                 onClick={hide}
               >
                 Dr. Frink-Dienes Eszter
@@ -105,7 +105,7 @@ const SideDrawer = ({ show, hide }) => {
             <li>
               <Link
                 className='sidebar__navigation-link'
-                to='/physicians/dr-rab-andrea'
+                to='/orvosok/dr-rab-andrea'
                 onClick={hide}
               >
                 Dr. Rab Andrea
@@ -116,7 +116,7 @@ const SideDrawer = ({ show, hide }) => {
         <li>
           <Link
             className='sidebar__navigation-link'
-            to='/prices'
+            to='/arak'
             onClick={hide}
           >
             Árak
@@ -125,7 +125,7 @@ const SideDrawer = ({ show, hide }) => {
         <li>
           <Link
             className='sidebar__navigation-link'
-            to='/contact'
+            to='/kapcsolat'
             onClick={hide}
           >
             Kapcsolat

@@ -20,7 +20,7 @@ const Toolbar = ({ drawerClickHandler, show }) => {
         <div className='toolbar__navigation-items'>
           <ul className='toolbar__navigation-items-list'>
             <li>
-              <Link className='toolbar__navigation-link' to='/familymed'>
+              <Link className='toolbar__navigation-link' to='/csaladorvos'>
                 Családorvosi rendelő
               </Link>
             </li>
@@ -28,24 +28,24 @@ const Toolbar = ({ drawerClickHandler, show }) => {
               <span className='toolbar__navigation-link'>Szakrendelés</span>
               <ul className='toolbar__navigation-submenu-items'>
                 <li>
-                  <Link className='toolbar__navigation-link' to='/cardiology'>
+                  <Link className='toolbar__navigation-link' to='/kardiologia'>
                     Kardiológia
                   </Link>
                 </li>
                 <li>
-                  <Link className='toolbar__navigation-link' to='/psychiatry'>
+                  <Link className='toolbar__navigation-link' to='/pszichiatria'>
                     Pszichiátria
                   </Link>
                 </li>
                 <li>
-                  <Link className='toolbar__navigation-link' to='/internalmed'>
+                  <Link className='toolbar__navigation-link' to='/belgyogyaszat'>
                     Belgyógyászat
                   </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link className='toolbar__navigation-link' to='/psychology'>
+              <Link className='toolbar__navigation-link' to='/pszichologia'>
                 Pszichológia
               </Link>
             </li>
@@ -56,7 +56,7 @@ const Toolbar = ({ drawerClickHandler, show }) => {
                 <li>
                   <Link
                     className='toolbar__navigation-link'
-                    to='/physicians/dr-fehervari-lajos'
+                    to='/orvosok/dr-fehervari-lajos'
                   >
                     Dr. Fehérvári Lajos
                   </Link>
@@ -64,7 +64,7 @@ const Toolbar = ({ drawerClickHandler, show }) => {
                 <li>
                   <Link
                     className='toolbar__navigation-link'
-                    to='/physicians/dr-fehervari-lazar-monika'
+                    to='/orvosok/dr-fehervari-lazar-monika'
                   >
                     Dr. Fehérvári Lázár Mónika
                   </Link>
@@ -72,7 +72,7 @@ const Toolbar = ({ drawerClickHandler, show }) => {
                 <li>
                   <Link
                     className='toolbar__navigation-link'
-                    to='/physicians/dr-frink-dienes-eszter'
+                    to='/orvosok/dr-frink-dienes-eszter'
                   >
                     Dr. Frink-Dienes Eszter
                   </Link>
@@ -80,7 +80,7 @@ const Toolbar = ({ drawerClickHandler, show }) => {
                 <li>
                   <Link
                     className='toolbar__navigation-link'
-                    to='/physicians/dr-rab-andrea'
+                    to='/orvosok/dr-rab-andrea'
                   >
                     Dr. Rab Andrea
                   </Link>
@@ -88,12 +88,12 @@ const Toolbar = ({ drawerClickHandler, show }) => {
               </ul>
             </li>
             <li>
-              <Link className='toolbar__navigation-link' to='/prices'>
+              <Link className='toolbar__navigation-link' to='/arak'>
                 Árak
               </Link>
             </li>
             <li className='last-item'>
-              <Link className='toolbar__navigation-link' to='/contact'>
+              <Link className='toolbar__navigation-link' to='/kapcsolat'>
                 Kapcsolat
               </Link>
             </li>

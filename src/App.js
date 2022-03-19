@@ -42,14 +42,14 @@ function App () {
         <Container>
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/cardiology' element={<Cardiology />} />
-            <Route path='/psychiatry' element={<Psychiatry />} />
-            <Route path='/internalmed' element={<InternalMed />} />
-            <Route path='/familymed' element={<FamilyMed />} />
-            <Route path='/psychology' element={<Psychology />} />
-            <Route path='/physicians/:name' element={<Physician />} />
-            <Route path='/contact' element={<Contact />} />
-            <Route path='/prices' element={<PricesList />} />
+            <Route path='/kardiologia' element={<Cardiology />} />
+            <Route path='/pszichiatria' element={<Psychiatry />} />
+            <Route path='/belgyogyaszat' element={<InternalMed />} />
+            <Route path='/csaladorvos' element={<FamilyMed />} />
+            <Route path='/pszichologia' element={<Psychology />} />
+            <Route path='/orvosok/:name' element={<Physician />} />
+            <Route path='/kapcsolat' element={<Contact />} />
+            <Route path='/arak' element={<PricesList />} />
             <Route path='*' element={<Home />} />
           </Routes>
         </Container>

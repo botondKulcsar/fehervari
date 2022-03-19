@@ -95,6 +95,10 @@
   font-family: "Rawengulk Bold";
 }
 
+.telephone span {
+  white-space: nowrap;
+}
+
 .icon {
   color: var(--main-red);
   font-size: 2.5rem;

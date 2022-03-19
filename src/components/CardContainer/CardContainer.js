@@ -14,25 +14,25 @@ const CardContainer = () => {
       icon: <RiHeartPulseLine />,
       title: 'Kardiológia',
       content: '0745 372 390',
-      to: '/cardiology'
+      to: '/kardiologia'
     },
     {
       icon: <RiPsychotherapyLine />,
       title: 'Pszichiátria',
       content: '0743 992 618',
-      to: '/psychiatry'
+      to: '/pszichiatria'
     },
     {
       icon: <MdOutlinePsychology />,
       title: 'Pszichológia',
       content: '0720 020 840',
-      to: '/psychology'
+      to: '/pszichologia'
     },
     {
       icon: <MdOutlineMedication />,
       title: 'Belgyógyászat',
       content: '0745 329 753',
-      to: '/internalmed'
+      to: '/belgyogyaszat'
     }
   ]
   return (
