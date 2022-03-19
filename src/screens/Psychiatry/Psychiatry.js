@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import classes from './Psychiatry.module.css'
 import psychiatrist from '../../assets/imgs/psychiatrist.jpeg'
 import { GiRotaryPhone } from 'react-icons/gi'
+import {Link} from 'react-router-dom'
 
 const Psychiatry = () => {
   useEffect(() => {
@@ -9,11 +10,11 @@ const Psychiatry = () => {
   }, [])
   return (
     <div className='wrapper'>
-      <h2 className='title'>Pszichiátria</h2>
+      <h1 className='title'>Pszichiátria</h1>
       <a className='telephone-link' href='tel:+40743992618'>
         <GiRotaryPhone className='icon' /> <span>0743 992 618</span>
       </a>
-      <h4 className='doctor'>Dr. Frink-Dienes Eszter</h4>
+      <h4 className='doctor'><Link to='/orvosok/dr-frink-dienes-eszter'>Dr. Frink-Dienes Eszter</Link></h4>
 
       <div className={classes['img-holder']}>
         <img src={psychiatrist} alt='Dr. Frink-Dienes Eszter' />

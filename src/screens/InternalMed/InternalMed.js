@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import classes from './InternalMed.module.css'
 // import internalMed from '../../assets/imgs/internalMed.jpg'
 import { GiRotaryPhone } from 'react-icons/gi'
+import {Link} from 'react-router-dom'
 
 const InternalMed = () => {
   useEffect(() => {
@@ -9,14 +10,14 @@ const InternalMed = () => {
   }, [])
   return (
     <div className='wrapper'>
-      <h2 className='title'>Belgyógyászat</h2>
+      <h1 className='title'>Belgyógyászat</h1>
       <a className='telephone-link' href='tel:+40745329753'>
         <GiRotaryPhone className='icon' /> <span>0745 329 753</span>
       </a>
-      <h4 className='doctor'>Dr. Rab Andrea</h4>
+      <h4 className='doctor'><Link to='/orvosok/dr-rab-andrea'>Dr. Rab Andrea</Link></h4>
 
       <div className={classes['img-holder']}>
-        {/*<img src={internalMed} alt='Dr. Frink-Dienes Eszter' />*/}
+        {/*<img src={internalMed} alt='Dr. Rab Andrea' />*/}
       </div>
       <p>
         A belgyógyászat az orvostudomány egyik legszerteágazóbb szakterülete,

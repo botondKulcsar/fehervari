@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import './Cardiology.css'
 import cardiologist from '../../assets/imgs/cardiologist.jpeg'
 import { GiRotaryPhone } from 'react-icons/gi'
+import {Link} from 'react-router-dom'
 
 const Cardiology = () => {
   useEffect(() => {
@@ -10,11 +11,11 @@ const Cardiology = () => {
 
   return (
     <div className='wrapper'>
-      <h2 className='title'>Kardiológia</h2>
+      <h1 className='title'>Kardiológia</h1>
       <a className='telephone-link' href='tel:+40745372390'>
         <GiRotaryPhone className='icon' /> <span>0745 372 390</span>
       </a>
-      <h4 className='doctor'>Dr. Fehérvári Lajos</h4>
+      <h4 className='doctor'><Link to='/orvosok/dr-fehervari-lajos'>Dr. Fehérvári Lajos</Link></h4>
 
       <div className='img-holder'>
         <img src={cardiologist} alt='Dr. Fehérvári Lajos' />

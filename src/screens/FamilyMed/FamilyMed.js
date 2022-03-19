@@ -2,6 +2,8 @@ import { useEffect } from 'react'
 import classes from './FamilyMed.module.css'
 import familyMed from '../../assets/imgs/familyMed.jpeg'
 import { GiRotaryPhone } from 'react-icons/gi'
+import {Link} from 'react-router-dom'
+
 
 const Psychiatry = () => {
   useEffect(() => {
@@ -11,11 +13,11 @@ const Psychiatry = () => {
     <div className='wrapper'>
       <div className={classes['flex-container']}>
         <div>
-          <h2 className='title'>Családorvosi rendelő</h2>
+          <h1 className='title'>Családorvosi rendelő</h1>
           <a className='telephone-link' href='tel:+40365424596'>
             <GiRotaryPhone className='icon' /> <span>0365 424 596</span>
           </a>
-          <h4 className='doctor'>Dr. Fehérvári Lázár Mónika</h4>
+          <h4 className='doctor'><Link to='/orvosok/dr-fehervari-lazar-monika'>Dr. Fehérvári Lázár Mónika</Link></h4>
           <h4 className='doctor'>Dr. Bartel Klára</h4>
           <h4 className='doctor'>Rácz Emoke Irén általános asszisztens</h4>
           <h4 className='doctor'>Bárczi Emoke Ildikó védőnő</h4>

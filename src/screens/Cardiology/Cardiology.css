@@ -102,3 +102,34 @@ p,
 li {
   font-size: 1.8rem;
 }
+
+.doctor * {
+  /* display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start; */
+  color: black;
+  font-family: "Rawengulk Bold";
+  /* font-weight: bold; */
+  text-decoration: none;
+  position: relative;
+}
+
+
+
+.doctor *::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0%;
+  left: 50%;
+  height: 2px;
+  background: var(--main-red);
+  transition: all 0.3s;
+}
+
+.doctor:hover *::after {
+  transform: translateX(0);
+  width: 100%;
+  left: 0;
+}
