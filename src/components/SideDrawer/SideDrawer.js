@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import './SideDrawer.css'
 import { Link } from 'react-router-dom'
+import { IoIosArrowDown } from 'react-icons/io'
 
 const SideDrawer = ({ show, hide }) => {
   useEffect(() => {
@@ -25,10 +26,10 @@ const SideDrawer = ({ show, hide }) => {
           </Link>
         </li>
         <li className='sidebar__navigation-submenu-parent'>
-          <label htmlFor='submenu' className='sidebar__navigation-link'>
-            Szakrendelés
-          </label>
           <input type='checkbox' id='submenu' />
+          <label htmlFor='submenu' className='sidebar__navigation-link'>
+            <span>Szakrendelés</span> <IoIosArrowDown className='arrow' />
+          </label>
           <ul className='sidebar__navigation-submenu-items types'>
             <li>
               <Link
@@ -70,10 +71,10 @@ const SideDrawer = ({ show, hide }) => {
           </Link>
         </li>
         <li className='sidebar__navigation-submenu-parent'>
-          <label htmlFor='submenu1' className='sidebar__navigation-link'>
-            Orvosok
-          </label>
           <input type='checkbox' id='submenu1' />
+          <label htmlFor='submenu1' className='sidebar__navigation-link'>
+            <span>Orvosok</span> <IoIosArrowDown className='arrow' />
+          </label>
           <ul className='sidebar__navigation-submenu-items physicians'>
             <li>
               <Link
@@ -114,11 +115,7 @@ const SideDrawer = ({ show, hide }) => {
           </ul>
         </li>
         <li>
-          <Link
-            className='sidebar__navigation-link'
-            to='/arak'
-            onClick={hide}
-          >
+          <Link className='sidebar__navigation-link' to='/arak' onClick={hide}>
             Árak
           </Link>
         </li>
