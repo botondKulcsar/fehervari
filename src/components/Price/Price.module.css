@@ -10,6 +10,7 @@
 
 .price:hover {
   box-shadow: var(--dark-shadow);
+  background-image: linear-gradient(315deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 .domain {
