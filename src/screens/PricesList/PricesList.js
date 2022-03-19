@@ -9,7 +9,7 @@ import { MdOutlineMedication } from 'react-icons/md'
 const prices = [
   {
     domain: 'Kardiológia',
-    link: '/cardiology',
+    link: '/kardiologia',
     icon: <RiHeartPulseLine />,
     physician: 'Dr. Fehérvári Lajos',
     speciality: 'kardiológus szakorvos',
@@ -19,7 +19,7 @@ const prices = [
   },
   {
     domain: 'Pszichiátria',
-    link: '/psychiatry',
+    link: '/pszichiatria',
     icon: <RiPsychotherapyLine />,
     physician: 'Dr. Frink-Dienes Eszter',
     speciality: 'pszichiáter szakorvos',
@@ -32,7 +32,7 @@ const prices = [
   },
   {
     domain: 'Pszichológia',
-    link: '/psychology',
+    link: '/pszichologia',
     icon: <MdOutlinePsychology />,
     physician: 'Dr. Filip Laura',
     speciality: 'pszichológus',
@@ -42,7 +42,7 @@ const prices = [
   },
   {
     domain: 'Belgyógyászat',
-    link: '/internalmed',
+    link: '/belgyogyaszat',
     icon: <MdOutlineMedication />,
     physician: 'Dr. Rab Andrea',
     speciality: 'belgyógyász szakorvos',

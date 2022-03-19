@@ -26,7 +26,7 @@ const Price = ({ price }) => {
         </Link>
       </h2>
       <h3 className={classes.physician}>
-        <Link to={person ? `/physicians/${person.name}` : '/psychology'}>
+        <Link to={person ? `/orvosok/${person.name}` : '/pszichologia'}>
           {physician}
         </Link>
       </h3>
