@@ -4,12 +4,12 @@ import DrawerToggleButton from '../SideDrawer/DrawerToggleButton'
 import logo_small from '../../assets/imgs/logo_small.jpeg'
 import { Link } from 'react-router-dom'
 
-const Toolbar = ({ drawerClickHandler, show }) => {
+const Toolbar = ({ drawerClickHandler, show, hide }) => {
   return (
     <header className='toolbar'>
       <nav className='toolbar__navigation'>
         <div className='toolbar__logo'>
-          <Link to='/'>
+          <Link to='/' onClick={hide}>
             <img src={logo_small} alt='Fehervari Medcenter Logo' />
           </Link>
         </div>

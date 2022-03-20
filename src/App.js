@@ -34,6 +34,7 @@ function App () {
         <Toolbar
           drawerClickHandler={drawerToggleClickHandler}
           show={sideDrawerOpen}
+          hide={backdropClickHandler}
         />
         <SideDrawer show={sideDrawerOpen} hide={backdropClickHandler} />
       </header>
