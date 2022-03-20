@@ -98,4 +98,9 @@ input[type="checkbox"] {
   .sidebar__navigation-submenu-items {
     gap: 0.65rem;
   }
+
+  input:checked ~ .physicians {
+    height: 15.8rem;
+    margin-top: 1.3rem;
+  }
 }

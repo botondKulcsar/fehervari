@@ -62,6 +62,8 @@
   justify-content: space-between;
 }
 
+
+
 .physician {
   margin-top: -1rem;
 }
@@ -114,4 +116,12 @@
   100% {
     transform: scale(1);
   }
+}
+
+
+@media only screen and (max-width: 375px) {
+  .price {
+    padding: 1rem;
+  }
+  
 }
