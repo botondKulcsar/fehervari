@@ -34,9 +34,6 @@
   margin: 0.5rem 0;
 }
 
-/* .side-drawer li:last-child {
-  margin-bottom: 2rem;
-} */
 
 .sidebar__navigation-link {
   color: var(--main-red);
@@ -54,6 +51,7 @@
 }
 
 .arrow {
+  transform: translateY(-1px);
   transition: transform 0.3s;
 }
 
@@ -83,7 +81,7 @@ input:checked ~ .physicians {
 }
 
 input:checked ~ .sidebar__navigation-link > .arrow {
-  transform: rotate(180deg);
+  transform: rotate(90deg) translateX(-1px);
 }
 
 input[type="checkbox"] {

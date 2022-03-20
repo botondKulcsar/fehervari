@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import './SideDrawer.css'
 import { Link } from 'react-router-dom'
-import { IoIosArrowDown } from 'react-icons/io'
+import { IoIosArrowForward } from 'react-icons/io'
 
 const SideDrawer = ({ show, hide }) => {
   useEffect(() => {
@@ -28,7 +28,7 @@ const SideDrawer = ({ show, hide }) => {
         <li className='sidebar__navigation-submenu-parent'>
           <input type='checkbox' id='submenu' />
           <label htmlFor='submenu' className='sidebar__navigation-link'>
-            <span>Szakrendelés</span> <IoIosArrowDown className='arrow' />
+            <span>Szakrendelés</span> <IoIosArrowForward className='arrow' />
           </label>
           <ul className='sidebar__navigation-submenu-items types'>
             <li>
@@ -73,7 +73,7 @@ const SideDrawer = ({ show, hide }) => {
         <li className='sidebar__navigation-submenu-parent'>
           <input type='checkbox' id='submenu1' />
           <label htmlFor='submenu1' className='sidebar__navigation-link'>
-            <span>Orvosok</span> <IoIosArrowDown className='arrow' />
+            <span>Orvosok</span> <IoIosArrowForward className='arrow' />
           </label>
           <ul className='sidebar__navigation-submenu-items physicians'>
             <li>
