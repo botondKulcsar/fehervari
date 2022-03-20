@@ -2,15 +2,13 @@ import { useEffect } from 'react'
 import classes from './Physician.module.css'
 import { useParams } from 'react-router-dom'
 
-
-
 import physicians from '../../db/physicians'
 
 const Physician = () => {
+  const { name } = useParams()
   useEffect(() => {
     window.scrollTo(0, 0)
-  }, [])
-  const { name } = useParams()
+  }, [name])
 
   const physician = physicians.find(ph => ph.name === name)
 
