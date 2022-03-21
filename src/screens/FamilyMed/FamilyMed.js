@@ -19,8 +19,8 @@ const Psychiatry = () => {
           </a>
           <h4 className='doctor'><Link to='/orvosok/dr-fehervari-lazar-monika'>Dr. Fehérvári Lázár Mónika</Link></h4>
           <h4 className='doctor'>Dr. Bartel Klára</h4>
-          <h4 className='doctor'>Rácz Emoke Irén általános asszisztens</h4>
-          <h4 className='doctor'>Bárczi Emoke Ildikó védőnő</h4>
+          <h4 className='doctor'>Rácz Emőke Irén általános asszisztens</h4>
+          <h4 className='doctor'>Bárczi Emőke Ildikó védőnő</h4>
         </div>
         <div className={classes['img-holder']}>
           <img src={familyMed} alt='Dr. Fehérvári Lázár Mónika' />
